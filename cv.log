@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2024.6.12)  29 JAN 2025 15:23
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2024.6.12)  29 JAN 2025 19:38
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/nico/phd/IJCAI_25_CV/cv.tex
@@ -576,7 +576,6 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `draft' set `true' on input line 4045.
 Package hyperref Info: Option `unicode' set `true' on input line 4045.
 Package hyperref Info: Hyper figures OFF on input line 4162.
 Package hyperref Info: Link nesting OFF on input line 4167.
@@ -775,13 +774,17 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 7.66417pt on input line 57.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.47441pt on input line 57.
-
-
-Package hyperref Warning: Draft mode on.
-
 Package hyperref Info: Link coloring OFF on input line 57.
+ (./cv.out) (./cv.out)
+\@outlinefile=\write4
+
+\openout4 = cv.out
 \headertextwidth=\skip91
 \headerphotowidth=\skip92
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 62.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 62.
 
 Overfull \hbox (1.46pt too wide) in paragraph at lines 62--62
 []$[]$ $[]$$[]$ 
@@ -790,8 +793,6 @@ Overfull \hbox (1.46pt too wide) in paragraph at lines 62--62
 (./cv/education.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 14.0pt on input line 4.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 23.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 23.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(3)/m/n' will be
@@ -800,58 +801,69 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(3)/m/sl' in size <10> not avail
 (Font)              Font shape `TU/SourceSansPro(3)/m/it' tried instead on input line 23.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(3)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 23.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 23.
 
 Overfull \hbox (2.92001pt too wide) in paragraph at lines 23--35
    [] 
  []
 
-) (./cv/publications.tex
+) (./cv/intrest.tex) (./cv/publications.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 12.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(3)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 18.
-)
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 53.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 53.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./cv/presentation.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./cv/presentation.tex
 Overfull \hbox (9.45987pt too wide) in paragraph at lines 31--32
- []\TU/SourceSansPro(2)/m/n/10 Tack-ling En-vi-ron-men-tal Vari-abil-ity: Few Shot Seg-men-ta-tion for Domain-Adaptive Weed Seg-men-ta-tion in Agri-cul-tural Robotics. 
+ []\TU/SourceSansPro(0)/m/n/10 Tack-ling En-vi-ron-men-tal Vari-abil-ity: Few Shot Seg-men-ta-tion for Domain-Adaptive Weed Seg-men-ta-tion in Agri-cul-tural Robotics. 
  []
 
 ) (./cv/teaching.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(3)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 13.
-) (./cv/mentoring.tex) (./cv/extracurricular.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 34.
+) (./cv/mentoring.tex
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 19.
+) (./cv/extracurricular.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 36.
-) [2] [3] (./cv.aux))
+) (./cv/conference_reviwer.tex) [2] (./cv.aux)
+Package rerunfilecheck Info: File `cv.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+)
 
 Here is how much of LuaTeX's memory you used:
- 33927 strings out of 478382
+ 33996 strings out of 478382
  125086,1977958 words of node,token memory allocated
- 686 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 91 glue_spec, 7 attribute_list, 2 write nodes
-   avail lists: 2:940,3:416,4:309,5:1272,6:153,7:9148,8:1,9:897,10:15,11:681
- 52917 multiletter control sequences out of 65536+600000
- 93 fonts using 26834495 bytes
- 114i,11n,115p,566b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Semibold.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-RegularIt.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Light.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-LightIt.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Regular.otf><./fonts/Roboto-Regular.ttf><./fonts/FontAwesome.ttf><./fonts/Roboto-Italic.ttf><./fonts/Roboto-Thin.ttf>
-Output written on cv.pdf (3 pages, 57176 bytes).
+ 690 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 91 glue_spec, 8 attribute_list, 2 write nodes
+   avail lists: 2:1014,3:451,4:332,5:1821,6:170,7:12406,8:77,9:946,10:15,11:1048
+ 52936 multiletter control sequences out of 65536+600000
+ 104 fonts using 33590463 bytes
+ 114i,11n,115p,1056b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Semibold.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-RegularIt.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Light.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-LightIt.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Bold.otf><./fonts/Roboto-Regular.ttf><./fonts/FontAwesome.ttf><./fonts/Roboto-Italic.ttf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Regular.otf><./fonts/Roboto-Thin.ttf>
+Output written on cv.pdf (2 pages, 61076 bytes).
 
-PDF statistics: 94 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 131072)
+PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

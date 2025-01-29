@@ -18,7 +18,7 @@
 %
 %-------------------------------------------------------------------------------
 % Options for draft or final
-\DeclareOption{draft}{\setlength\overfullrule{5pt}}
+%\DeclareOption{draft}{\setlength\overfullrule{5pt}}
 \DeclareOption{final}{\setlength\overfullrule{0pt}}
 
 % Inherit options of article
@@ -138,7 +138,9 @@
 %-----------------------------------------
 % custom command @nico
 %-----------------------------------------
-\newcommand*{\link}[1]{\href{#1}{{\fontsize{10pt}{1em}\bodyfont\color{teal}\texttt{#1}}}}
+\newcommand*{\link}[1]{{{\fontsize{10pt}{1em}\bodyfont\color{teal}\texttt{\url{#1}}}}}
+
+\newcommand*{\linked}[2]{{{\fontsize{10pt}{1em}\bodyfont\color{teal}\href{#1}{#2}}}}
 
 
 
@@ -183,7 +185,7 @@
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\color{text}}
+\newcommand*{\paragraphstyle}{\fontsize{10pt}{1em}\bodyfont\color{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -300,6 +302,10 @@
 % Usage: \xing{<xing name>}
 \newcommand*{\xing}[1]{\def\@xing{#1}}
 
+% Defines writer's scholar (optional)
+% Usage: \scholar{<User ID>}
+\newcommand*{\scholar}[1]{\def\@scholar{#1}}
+
 % Defines writer's extra informations (optional)
 % Usage: \extrainfo{<extra informations>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
@@ -321,8 +327,8 @@
 
 % Others
 % this defines the spacing between each section
-\newcommand{\acvSectionTopSkip}{3mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{0.5mm}%{3mm}
+\newcommand{\acvSectionContentTopSkip}{1.5mm}%{2.5mm}
 
 
 %-------------------------------------------------------------------------------
@@ -435,11 +441,17 @@
           \faSkype\acvHeaderIconSep\@skype%
         }%
       \ifthenelse{\isundefined{\@reddit}}%
-        {}%
-        {%
-          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.reddit.com/user/\@reddit}{\faReddit\acvHeaderIconSep\@reddit}%
-        }%
+      {}%
+      {%
+        \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+        \href{https://www.reddit.com/user/\@reddit}{\faReddit\acvHeaderIconSep\@reddit}%
+      }%
+      \ifthenelse{\isundefined{\@scholar}}%
+      {}%
+      {%
+        \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+        \href{https://scholar.google.com/citations?user=\@scholar}{\faGraduationCap\acvHeaderIconSep\@scholar}%{\aiGoogleScholar\acvHeaderIconSep\@scholar}%
+      }%
       \ifthenelse{\isundefined{\@xing}}%
         {}%
         {%
@@ -484,7 +496,7 @@
 % Usage: \cvsubsection{<subsection-title>}
 \newcommand{\cvsubsection}[1]{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-3mm}
+  \vspace{-4mm}
   \subsectionstyle{#1}
   \phantomsection
 }
@@ -492,11 +504,11 @@
 % Define a paragraph for CV
 \newenvironment{cvparagraph}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-3mm}
+  \vspace{-2mm}
   \paragraphstyle
 }{%
   \par
-  \vspace{2mm}
+  \vspace{1mm}
 }
 
 % Define an environment for cventry
@@ -505,6 +517,7 @@
   \begin{center}
 }{%
   \end{center}
+  \vspace{-1mm}
 }
 
 % Define an entry of cv information
@@ -554,7 +567,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{1.7cm} L{\textwidth - 4.5cm} R{2cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{2.2cm} L{\textwidth-4cm} R{1cm}}
 }{%
     \end{tabular*}
   \end{center}
@@ -567,7 +580,7 @@
 }
 
 \newcommand*{\msctesi}[5]{
-  \honordatestyle{#4} & \honorpositionstyle{#1} \break \honortitlestyle{#2} \honorlinkstyle{#5}   & \honorlocationstyle{#3} \vspace{25px} \\
+  \honordatestyle{#4} & \honorpositionstyle{#1} \break \honortitlestyle{#2} \link{#5}   & \honorlocationstyle{#3} \vspace{20px} \\
 }
 
 % Define an environment for cvskill
@@ -588,6 +601,8 @@
 \newcommand*{\cvskill}[3]{%
 	\skilltypestyle{#1} & \skillsetstyle{#2}, \skilllocstyle{#3}\\
 }
+
+
 
 % Define an environment for cvpub
 \newenvironment{cvpubs}{%
