@@ -216,6 +216,10 @@
 % For elements of publication
 \newcommand*{\pubstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{text} #1}}
 
+% Comandi tesi @nico
+\newcommand*{\tesistanamestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\linktesi}[1]{{{\fontsize{8pt}{1em}\bodyfont\color{teal}\texttt{\url{#1}}}}}
+
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -579,8 +583,9 @@
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3}\\
 }
 
+%title %name %location %date %link
 \newcommand*{\msctesi}[5]{
-  \honordatestyle{#4} & \honorpositionstyle{#1} \break \honortitlestyle{#2} \link{#5}   & \honorlocationstyle{#3} \vspace{20px} \\
+  \honordatestyle{#4} & \honorpositionstyle{#1} \break \tesistanamestyle{#2} \linktesi{#5}   & \honorlocationstyle{#3} \vspace{20px} \\
 }
 
 % Define an environment for cvskill
