@@ -450,7 +450,7 @@
       {}%
       {%
         \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-        \href{https://scholar.google.com/citations?user=\@scholar}{\faGraduationCap\acvHeaderIconSep\@scholar}%{\aiGoogleScholar\acvHeaderIconSep\@scholar}%
+        \href{https://scholar.google.com/citations?user=\@scholar}{\faGraduationCap\acvHeaderIconSep Google Scholar}%{\aiGoogleScholar\acvHeaderIconSep\@scholar}%
       }%
       \ifthenelse{\isundefined{\@xing}}%
         {}%
