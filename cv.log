@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2024.6.12)  30 JAN 2025 14:02
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2024.6.12)  31 JAN 2025 15:20
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/nico/phd/IJCAI_25_CV/cv.tex
@@ -850,17 +850,17 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  33988 strings out of 478382
  125086,1977958 words of node,token memory allocated
- 690 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 91 glue_spec, 8 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1001,3:438,4:319,5:1858,6:167,7:12521,8:76,9:930,10:15,11:1084
+ 698 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 91 glue_spec, 9 attribute_list, 2 write, 1 pdf_colorstack nodes
+   avail lists: 1:1,2:1021,3:438,4:318,5:1858,6:167,7:12521,8:77,9:930,10:15,11:1084
  52939 multiletter control sequences out of 65536+600000
- 105 fonts using 33943279 bytes
+ 105 fonts using 33942975 bytes
  114i,11n,115p,799b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Semibold.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-RegularIt.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Light.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-LightIt.otf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Bold.otf><./fonts/Roboto-Regular.ttf><./fonts/FontAwesome.ttf><./fonts/Roboto-Italic.ttf></usr/share/texlive/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro-Regular.otf><./fonts/Roboto-Thin.ttf>
-Output written on cv.pdf (2 pages, 61443 bytes).
+Output written on cv.pdf (2 pages, 62366 bytes).
 
-PDF statistics: 122 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+PDF statistics: 123 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
